@@ -46,8 +46,8 @@ Implementation of the model-based few-shot learner using the subspace method, in
 
 Given video frames for each class as the context (in the support set), we create a subspace for each class as a classifier for target video frames. The rationale of this approach is that the object of the user's interest is located in a few frames and these frames can be represented by a few principal components. In addition, the subspace method produces a higher-order representation for classification meaning that the representation is more expressive compared to the prototypical solution.
 
-In our setup, we replace the classifiers using subspaces while the CNN backbone remains unmodified ([Code Ref](https://github.com/chrysts/orbit_challenge/blob/f5bf60f0cf43381be845830cfe1ac296b865c707/models/classifiers.py#L249)). 
-The feature extractor initially worked only for a GPU, we extend it to use DataParallel to distribute memory usage among GPUs ([Code Ref](https://github.com/chrysts/orbit_challenge/blob/77d2f827ee65eef4ceec957dee57ffe4c33935b7/models/few_shot_recognisers.py#L74)).
+In our setup, we replace the classifiers using subspaces while the CNN backbone remains unmodified ([Code Ref](https://github.com/chrysts/ORBITRON_Team_ORBIT_Challenge/blob/main/models/classifiers.py#L249)). 
+The feature extractor initially worked only for a GPU, we extend it to use DataParallel to distribute memory usage among GPUs ([Code Ref](https://github.com/chrysts/ORBITRON_Team_ORBIT_Challenge/blob/main/models/few_shot_recognisers.py#L74)).
 During training we only update the CNN backbone and there is no heavy data augmentation involved.  
 Our method has a hyper-parameter which is the subspace dimension. In our setup, the subspace dimension is the number of images per class (K) - 1.
 
@@ -70,7 +70,7 @@ Frames to Recognition (avg): 0.176
 
 For a complete description to the method that we use, please see our presentation:
 
-The video of our approach can be viewed at [https://drive.google.com/file/d/1RIZg1NkxNgWA9GLSF2G4WZBdIpEAJb_0/view](https://drive.google.com/file/d/1RIZg1NkxNgWA9GLSF2G4WZBdIpEAJb_0/view)
+The video of our approach can be viewed at [https://www.youtube.com/watch?v=yfc7qI83eFY](https://www.youtube.com/watch?v=yfc7qI83eFY)
 
 
 Run our method using 4 GPUs (TRAINING):
