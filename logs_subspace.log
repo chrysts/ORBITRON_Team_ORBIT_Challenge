@@ -1,0 +1,108 @@
+[33mwarning: --test_tasks_per_user > 1 means multiple predictions are made per target frame. Only the last prediction is saved to JSON[0m
+Options: Namespace(adapt_features=False, annotations_to_load=[], batch_normalisation='basic', batch_size=48, checkpoint_dir='./checkpoint', classifier='subspace', clip_length=8, context_shot=5, context_video_type='clean', data_path='/scratch1/sim314/data/orbit/orbit_benchmark_224', epochs=10, feature_adaptation_method='generate', feature_extractor='efficientnetb0', frame_size=224, gpu=0, learn_extractor=True, learning_rate=0.0001, mode='train_test', model_path=None, no_preload_clips=False, num_lite_samples=16, preload_clips=True, pretrained_extractor_path='features/pretrained/efficientnetb0_imagenet_224.pth', print_by_step=False, seed=1991, subsample_factor=1, target_shot=2, target_video_type='clutter', tasks_per_batch=16, test_context_num_clips='random', test_context_shot_method='max', test_set='test', test_target_num_clips='max', test_target_shot_method='max', test_tasks_per_user=5, test_way_method='max', train_context_num_clips='random', train_context_shot_method='random', train_object_cap=15, train_target_num_clips='random', train_target_shot_method='random', train_task_type='user_centric', train_tasks_per_user=50, train_way_method='random', use_two_gpus=False, validation_on_epoch=5, with_lite=True, with_train_shot_caps=False)
+
+Checkpoint Directory: ./checkpoint/2022-04-19-13-04-41
+
+Loaded data summary: 44 users, 278 objects, 2277 videos
+Loaded data summary: 6 users, 50 objects, 347 videos
+Loaded data summary: 17 users, 158 objects, 1198 videos
+------------------------------------------------------------------------------------------------------------------------------------------------------
+epoch [1/10] train loss: 0.8933522 frame_acc: 53.44 (0.96)  time/epoch: 56m23s
+------------------------------------------------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------------------------------------------
+epoch [2/10] train loss: 0.5800433 frame_acc: 56.71 (0.94)  time/epoch: 56m07s
+------------------------------------------------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------------------------------------------
+epoch [3/10] train loss: 0.4680852 frame_acc: 59.30 (0.93)  time/epoch: 56m08s
+------------------------------------------------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------------------------------------------
+epoch [4/10] train loss: 0.4478869 frame_acc: 60.05 (0.93)  time/epoch: 56m05s
+------------------------------------------------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------------------------------------------
+epoch [5/10] train loss: 0.4236214 frame_acc: 62.27 (0.95)  time/epoch: 56m51s
+------------------------------------------------------------------------------------------------------------------------------------------------------
+validation user P189 (1/6) stats: frame_acc: 63.88 (7.47) frames_to_recognition: 0.27 (0.30) video_acc: 72.00 (12.45) 
+validation user P194 (2/6) stats: frame_acc: 60.55 (5.56) frames_to_recognition: 0.89 (0.68) video_acc: 85.00 (9.04) 
+validation user P235 (3/6) stats: frame_acc: 67.43 (7.45) frames_to_recognition: 2.05 (1.21) video_acc: 78.18 (10.92) 
+validation user P579 (4/6) stats: frame_acc: 82.90 (7.35) frames_to_recognition: 0.81 (0.61) video_acc: 86.00 (9.62) 
+validation user P778 (5/6) stats: frame_acc: 74.13 (8.13) frames_to_recognition: 0.52 (0.32) video_acc: 74.00 (12.16) 
+validation user P867 (6/6) stats: frame_acc: 67.92 (9.49) frames_to_recognition: 2.23 (1.15) video_acc: 68.00 (12.93) 
+validation
+ per-user stats: frame_acc: 69.47 (5.84) frames_to_recognition: 1.13 (0.60) video_acc: 77.20 (5.28) 
+ per-video stats: frame_acc: 69.15 (3.19) frames_to_recognition: 1.13 (0.34) video_acc: 77.46 (4.61) 
+
+best validation model was updated.
+
+------------------------------------------------------------------------------------------------------------------------------------------------------
+epoch [6/10] train loss: 0.4301566 frame_acc: 64.06 (0.94)  time/epoch: 58m12s
+------------------------------------------------------------------------------------------------------------------------------------------------------
+validation user P189 (1/6) stats: frame_acc: 62.70 (7.02) frames_to_recognition: 0.85 (1.02) video_acc: 74.00 (12.16) 
+validation user P194 (2/6) stats: frame_acc: 61.14 (6.12) frames_to_recognition: 1.01 (0.68) video_acc: 86.67 (8.60) 
+validation user P235 (3/6) stats: frame_acc: 67.23 (7.68) frames_to_recognition: 2.12 (1.31) video_acc: 76.36 (11.23) 
+validation user P579 (4/6) stats: frame_acc: 85.72 (7.12) frames_to_recognition: 0.87 (0.61) video_acc: 90.00 (8.32) 
+validation user P778 (5/6) stats: frame_acc: 74.33 (7.82) frames_to_recognition: 0.13 (0.21) video_acc: 76.00 (11.84) 
+validation user P867 (6/6) stats: frame_acc: 70.65 (9.78) frames_to_recognition: 1.61 (0.98) video_acc: 70.00 (12.70) 
+validation
+ per-user stats: frame_acc: 70.29 (6.58) frames_to_recognition: 1.10 (0.50) video_acc: 78.84 (5.67) 
+ per-video stats: frame_acc: 69.96 (3.23) frames_to_recognition: 1.11 (0.37) video_acc: 79.05 (4.49) 
+
+best validation model was updated.
+
+------------------------------------------------------------------------------------------------------------------------------------------------------
+epoch [7/10] train loss: 0.3659329 frame_acc: 65.01 (0.97)  time/epoch: 56m05s
+------------------------------------------------------------------------------------------------------------------------------------------------------
+validation user P189 (1/6) stats: frame_acc: 65.24 (7.18) frames_to_recognition: 0.47 (0.41) video_acc: 74.00 (12.16) 
+validation user P194 (2/6) stats: frame_acc: 61.85 (6.22) frames_to_recognition: 1.27 (1.05) video_acc: 88.33 (8.12) 
+validation user P235 (3/6) stats: frame_acc: 67.62 (7.53) frames_to_recognition: 1.21 (0.69) video_acc: 81.82 (10.19) 
+validation user P579 (4/6) stats: frame_acc: 87.77 (6.46) frames_to_recognition: 1.13 (0.74) video_acc: 90.00 (8.32) 
+validation user P778 (5/6) stats: frame_acc: 79.55 (7.22) frames_to_recognition: 0.43 (0.38) video_acc: 80.00 (11.09) 
+validation user P867 (6/6) stats: frame_acc: 71.02 (9.19) frames_to_recognition: 1.73 (1.09) video_acc: 72.00 (12.45) 
+validation
+ per-user stats: frame_acc: 72.17 (7.11) frames_to_recognition: 1.04 (0.37) video_acc: 81.03 (5.33) 
+ per-video stats: frame_acc: 71.77 (3.14) frames_to_recognition: 1.05 (0.33) video_acc: 81.27 (4.31) 
+
+best validation model was updated.
+
+------------------------------------------------------------------------------------------------------------------------------------------------------
+epoch [8/10] train loss: 0.3789549 frame_acc: 66.19 (0.95)  time/epoch: 56m50s
+------------------------------------------------------------------------------------------------------------------------------------------------------
+validation user P189 (1/6) stats: frame_acc: 69.67 (5.69) frames_to_recognition: 0.70 (0.59) video_acc: 82.00 (10.65) 
+validation user P194 (2/6) stats: frame_acc: 60.33 (5.98) frames_to_recognition: 1.02 (0.67) video_acc: 85.00 (9.04) 
+validation user P235 (3/6) stats: frame_acc: 72.33 (6.72) frames_to_recognition: 0.57 (0.41) video_acc: 92.73 (6.86) 
+validation user P579 (4/6) stats: frame_acc: 86.82 (6.33) frames_to_recognition: 1.07 (0.69) video_acc: 86.00 (9.62) 
+validation user P778 (5/6) stats: frame_acc: 84.48 (6.89) frames_to_recognition: 0.57 (0.43) video_acc: 86.00 (9.62) 
+validation user P867 (6/6) stats: frame_acc: 71.63 (9.07) frames_to_recognition: 1.72 (1.09) video_acc: 72.00 (12.45) 
+validation
+ per-user stats: frame_acc: 74.21 (7.22) frames_to_recognition: 0.94 (0.32) video_acc: 83.95 (4.99) 
+ per-video stats: frame_acc: 73.74 (2.96) frames_to_recognition: 0.94 (0.28) video_acc: 84.13 (4.04) 
+
+best validation model was updated.
+
+------------------------------------------------------------------------------------------------------------------------------------------------------
+epoch [9/10] train loss: 0.3554458 frame_acc: 68.16 (0.95)  time/epoch: 56m52s
+------------------------------------------------------------------------------------------------------------------------------------------------------
+validation user P189 (1/6) stats: frame_acc: 67.00 (6.64) frames_to_recognition: 0.51 (0.48) video_acc: 74.00 (12.16) 
+validation user P194 (2/6) stats: frame_acc: 62.39 (5.61) frames_to_recognition: 0.90 (0.67) video_acc: 88.33 (8.12) 
+validation user P235 (3/6) stats: frame_acc: 74.66 (6.42) frames_to_recognition: 0.86 (0.52) video_acc: 90.91 (7.60) 
+validation user P579 (4/6) stats: frame_acc: 87.21 (6.57) frames_to_recognition: 1.00 (0.67) video_acc: 88.00 (9.01) 
+validation user P778 (5/6) stats: frame_acc: 83.68 (7.14) frames_to_recognition: 0.58 (0.38) video_acc: 82.00 (10.65) 
+validation user P867 (6/6) stats: frame_acc: 69.72 (9.15) frames_to_recognition: 1.75 (1.00) video_acc: 72.00 (12.45) 
+validation
+ per-user stats: frame_acc: 74.11 (7.09) frames_to_recognition: 0.93 (0.32) video_acc: 82.54 (5.82) 
+ per-video stats: frame_acc: 73.75 (2.99) frames_to_recognition: 0.93 (0.27) video_acc: 82.86 (4.16) 
+
+best validation model was updated.
+
+------------------------------------------------------------------------------------------------------------------------------------------------------
+epoch [10/10] train loss: 0.3414149 frame_acc: 68.67 (0.97)  time/epoch: 56m17s
+------------------------------------------------------------------------------------------------------------------------------------------------------
+validation user P189 (1/6) stats: frame_acc: 68.40 (5.36) frames_to_recognition: 0.65 (0.68) video_acc: 78.00 (11.48) 
+validation user P194 (2/6) stats: frame_acc: 61.48 (5.99) frames_to_recognition: 2.38 (2.91) video_acc: 86.67 (8.60) 
+validation user P235 (3/6) stats: frame_acc: 75.69 (6.93) frames_to_recognition: 0.79 (0.51) video_acc: 89.09 (8.24) 
+validation user P579 (4/6) stats: frame_acc: 81.65 (7.66) frames_to_recognition: 1.13 (0.70) video_acc: 84.00 (10.16) 
+validation user P778 (5/6) stats: frame_acc: 84.71 (6.76) frames_to_recognition: 0.65 (0.41) video_acc: 92.00 (7.52) 
+validation user P867 (6/6) stats: frame_acc: 68.23 (9.20) frames_to_recognition: 1.70 (1.08) video_acc: 68.00 (12.93) 
+validation
+ per-user stats: frame_acc: 73.36 (6.49) frames_to_recognition: 1.22 (0.51) video_acc: 82.96 (6.39) 
+ per-video stats: frame_acc: 73.02 (3.01) frames_to_recognition: 1.25 (0.62) video_acc: 83.17 (4.13) 
+
